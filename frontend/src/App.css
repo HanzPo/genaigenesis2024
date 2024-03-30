@@ -40,3 +40,69 @@
 .read-the-docs {
   color: #888;
 }
+
+body {
+  font-size: 12pt;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px 10px;
+  /*background: radial-gradient(at top left,lightgrey,lightgreen);*/
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  padding: 0px 20px 20px 20px;
+  border: 2px solid grey; 
+  border-radius: 15px 50px;
+  border-style: dotted double;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  clip-path: circle(50%);
+  width: 250px;
+  height: 250px;
+  opacity: 75%;
+}
+
+.shadow-effect {
+  filter: drop-shadow(10px 20px 100px lightslategrey);
+}
+
+.gradient-text {
+  background-image: linear-gradient(45deg, #09203F , #537895);
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-text2 {
+  background-image: linear-gradient(to right, rgb(83, 201, 15), rgb(51, 139, 147));
+  background-clip: text;
+  color: transparent;
+}
+
+.typewriter {
+  color: lightslategray;
+  display: inline-block;
+  font-family: "Arial", sans-serif;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 3s steps(90,end) forwards, blinking 1s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blinking {
+  0% { border-right-color: transparent }
+  50% { border-right-color: lightslategrey }
+  100% { border-right-color: transparent }
+}
